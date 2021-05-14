@@ -64,8 +64,7 @@ app.post("/jobDone", (req, res) => {
 
         isCorrect.failure = true;
     }
-    res.send(JSON.toString(isCorrect));
-
+    res.send(JSON.parse(isCorrect));
 })
 ;
 
