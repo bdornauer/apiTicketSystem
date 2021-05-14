@@ -10,7 +10,7 @@ var transporter = nodemailer.createTransport({
 
 function emailTemplate(job) {
   let descriptionLevel ="";
-  switch (job.sup()) {
+  switch (job.supportLevel) {
     case 1: descriptionLevel = "Wenig"; break;
     case 2: descriptionLevel = "Mittel"; break;
     case 3: descriptionLevel = "Schwer"; break;
