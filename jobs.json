@@ -3,38 +3,10 @@
   "jobs": [
     {
       "id": 1,
-      "name": "asdfasdf",
-      "room": "asdfasdf",
-      "description": "asdfasdf asdf ",
-      "supportLevel": "1",
-      "done": false,
-      "date": "2021-05-13T22:21:31.036Z"
-    },
-    {
-      "id": 2,
-      "name": "asdfasdf",
-      "room": "asdfasdf",
-      "description": "asdfasdf asdf ",
-      "supportLevel": "1",
-      "done": false,
-      "date": "2021-05-13T22:21:31.036Z"
-    },
-    {
-      "id": 3,
-      "name": "asdfasdf",
-      "room": "asdfasdf",
-      "description": "asdfasdf asdf ",
-      "supportLevel": "1",
-      "done": false,
-      "date": "2021-05-13T22:21:31.036Z"
-    },
-    {
-      "id": 4,
-      "name": "asdfasdf",
-      "room": "asdfasdf",
-      "description": "asdfasdf asdf ",
-      "supportLevel": "1",
-      "done": false,
+      "name": "Max Mustermann",
+      "room": "0A",
+      "description": "Der Computerbildschirm von PC vorne rechts mit Nr 23 funktioniert leider nicht mehr.",
+      "supportLevel": "2",
       "date": "2021-05-13T22:21:31.036Z"
     }
   ]
