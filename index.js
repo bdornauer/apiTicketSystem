@@ -62,7 +62,7 @@ app.post("/jobDone", (req, res) => {
         fs.writeFileSync("jobs.json", JSON.stringify(data));
         res.send("Done");
     }
-    res.status(403).send('Wrong password');
+    res.send('Wrong');
 
 })
 ;
