@@ -9,6 +9,13 @@ var transporter = nodemailer.createTransport({
 });
 
 function emailTemplate(job) {
+  let descriptionLevel ="";
+  switch (job.sup()) {
+    case 1: descriptionLevel = "Wenig"; break;
+    case 2: descriptionLevel = "Mittel"; break;
+    case 3: descriptionLevel = "Schwer"; break;
+  }
+
   let description =  `
   <h1>Some work todo</h1>
   <ul>`+
@@ -16,8 +23,8 @@ function emailTemplate(job) {
   `<li><b>Von:</b> `+ job.name + `</li>`+ 
   `<li><b>Raum:</b> `+ job.room + `</li>`+ 
   `<li><b>Beschreibung:</b> `+ job.description + `</li>`+ 
-  `<li><b>Wichtigkeit:</b> `+ job.supportLevel + `</li>`+ 
-  `<li><b>Datum:</b> `+ job.date + `</li>`+ 
+  `<li><b>Wichtigkeit:</b> `+ descriptionLevel + `</li>`+
+  `<li><b>Datum:</b> `+ job.date + `</li>`+
   `</ul>`;
 
   return({
