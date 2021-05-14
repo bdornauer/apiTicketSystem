@@ -44,7 +44,7 @@ app.post("/addJob", (req, res) => {
 
 
 app.post("/jobDone", (req, res) => {
-    let isCorrect = {failure: false};
+    let isCorrect = {failure: true};
     let doneJob = req.body;
     let doneJobId = doneJob.id;
     let adminPassword = doneJob.adminPassword;
@@ -62,7 +62,7 @@ app.post("/jobDone", (req, res) => {
 
         fs.writeFileSync("jobs.json", JSON.stringify(data));
 
-        isCorrect.failure = true;
+        isCorrect.failure = false;
     }
     res.send(JSON.stringify(isCorrect));
 
