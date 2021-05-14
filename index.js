@@ -20,6 +20,10 @@ app.get("/jobs", (req, res) => {
   res.send(JSON.stringify(jobs));
 });
 
+app.get("/", (req, res) => {
+  res.send('Backendserver is running.')
+});
+
 app.post("/addJob", (req, res) => {
   let jsonData = fs.readFileSync("jobs.json");
   let data = JSON.parse(jsonData);
